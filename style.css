@@ -7,15 +7,16 @@
 .aside {
     background-color: black;
     /* CONTROLLARE ALTEZZA */
-    height: 700px;
-
+    height: 600px;
 
 }
+
 
 .mn_section {
     background-color: darkgreen;
     /* CONTROLLARE ALTEZZA */
-    height: 700px;
+    height: 600px;
+
 
 }
 
@@ -34,6 +35,13 @@
     text-transform: uppercase;
 
 }
+
+
+.sec_container{
+    height: 500px;
+    overflow: auto;
+}
+
 
 .as_container {
     display: flex;
@@ -80,7 +88,19 @@
      flex-wrap: wrap;
 
  }
-.img-center img {
-    flex: 0 0 200px;
-    padding: 20px;
+.uno {
+    display: flex;
+    flex-direction: column;
+    /* width: calc(100% / 6); */
+
+}
+
+.uno img {
+    padding: 10px;
+    height: 150px;
+
+}
+
+.uno h4 {
+    text-align: center;
 }
