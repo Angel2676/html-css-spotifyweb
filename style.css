@@ -3,19 +3,31 @@
     margin:0;
     box-sizing: border-box;
 }
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    color: #fff;
+
+}
 
 .aside {
-    background-color: black;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+     background-blend-mode: multiply,multiply;
     /* CONTROLLARE ALTEZZA */
-    height: 600px;
+    height: calc(100vh - 80px);
 
 }
 
 
 .mn_section {
-    background-color: darkgreen;
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
     /* CONTROLLARE ALTEZZA */
-    height: 600px;
+    height: calc(100vh - 80px)
 
 
 }
@@ -32,14 +44,16 @@
     flex-direction:row;
     list-style-type: none;
     justify-content:center;
+    flex-wrap: wrap;
     text-transform: uppercase;
 
 }
 
 
 .sec_container{
-    height: 500px;
-    overflow: auto;
+    height: calc(100vh - 150px);
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 
@@ -56,7 +70,7 @@
 }
 
 .nav_bar li {
-    margin:20px 5px;
+    margin:20px 15px;
     color: white;
     font-size: 12px;
 }
@@ -101,6 +115,125 @@
 
 }
 
-.uno h4 {
+.uno h5 {
     text-align: center;
+}
+
+.player {
+    background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+    height: 80px;
+}
+
+.ft_player {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.left_cont {
+    /* background-color: red; */
+    width: 30%;
+}
+.left_cont img, .testi_1 {
+    height: 80px;
+    float: left;
+
+}
+
+.testi_1 h5, p {
+    padding-left: 5px;
+}
+
+
+.left_cont i {
+    line-height: 80px;
+    padding-left: 20px;
+
+}
+
+.main_cont {
+    /* background-color: purple; */
+    width: 50%;
+    text-align: center;
+    font-size: 25px;
+    padding: 0 5px;
+
+}
+
+.main_cont i {
+    padding-left: 20px;
+}
+
+.rig_cont {
+
+    width: 25%;
+}
+
+.scroll {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+
+
+.scroll i{
+   width: 30vw;
+   text-align: center;
+   border-bottom: 1px solid #fff;
+   line-height: 0.1em;
+   margin: 10px 0 20px;
+}
+
+h2 i {
+    background:#fff;
+    padding:0 10px;
+}
+
+.rig_cont{
+    font-size: 20px;
+    text-align: right;
+
+}
+
+.rig_cont i:last-child{
+   width: 5vw;
+   text-align: center;
+   border-bottom: 1px solid #fff;
+   line-height: 0.1em;
+   margin: 10px 0 20px;
+}
+
+h2 i {
+    background:#fff;
+    padding:0 10px;
+}
+
+@media screen and (max-width:1170px) {
+
+    .testi_1 h5, p {
+        font-size: 5px;
+    }
+
+    .left_cont i {
+
+        display: none
+
+    }
+
+    .aside {
+
+        height: calc(100vh - 26px);
+
+    }
+
+    .mn_section {
+        height: calc(100% - 80px)
+
+
+    }
+
+
 }
