@@ -379,5 +379,18 @@ h2 i {
         /* opacity: 0.7; */
     }
 
+    .img-center {
+justify-content: center;
+
+
+}
+
+.uno img {
+/* padding: 10px; */
+height: 250px;
+
+}
+
+
 
 }
